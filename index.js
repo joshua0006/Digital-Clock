@@ -10,8 +10,6 @@ function updateClock() {
 
   let period = hours < 12 ? 'AM' : 'PM';
 
-  hours = hours % 12;
-
   let timeString = hours + ':' + minutes + ':' + seconds + ' ' + period;
 
   document.querySelector('.clock').textContent = timeString;
